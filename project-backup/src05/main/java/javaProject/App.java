@@ -6,7 +6,7 @@ package javaProject;
 public class App {
     public static void main(String[] args) {
         // 학생의 성적을 저장할 때 사용할 사용자 정의 데이터 타입을 만든다.
-        //: > '사용자 정의 데이터 타입'은 데이터를 저장할 *메모리를 설계*하는 것이다.
+        // > '사용자 정의 데이터 타입'은 데이터를 저장할 *메모리를 설계*하는 것이다.
         
         class Score {
             String name;
@@ -17,7 +17,7 @@ public class App {
             float aver;
         }
         
-        //: 학생의 성적을 저장할 메모리를 준비한다.
+        // 학생의 성적을 저장할 메모리를 준비한다.
         Score s1 = new Score();
         s1.name = "홍길동";
         s1.kor = 100;
@@ -42,7 +42,7 @@ public class App {
         s3.sum = s3.kor + s3.eng + s3.math;
         s3.aver = s3.sum / 3f;
         
-        //: 학생 성적을 출력한다.
+        // 학생 성적을 출력한다.
         System.out.printf("%-4s, %4d, %4d, %4d, %4d, %6.1f\n",  
             s1.name, s1.kor, s1.eng, s1.math, s1.sum, s1.aver);
         

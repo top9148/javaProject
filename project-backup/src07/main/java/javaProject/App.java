@@ -8,8 +8,8 @@ package javaProject;
 
 public class App {
     public static void main(String[] args) {
-      //: 학생의 성적을 저장할 때 사용할 사용자 정의 데이터 타입을 만든다. 
-        //: > '사용자 정의 데이터 타입'은 데이터를 저장할 *메모리를 설계*하는 것이다.
+      // 학생의 성적을 저장할 때 사용할 사용자 정의 데이터 타입을 만든다. 
+        // > '사용자 정의 데이터 타입'은 데이터를 저장할 *메모리를 설계*하는 것이다.
         class Score {
             String name;
             int[] subjects = new int[3];
@@ -17,7 +17,7 @@ public class App {
             float aver;
         }
         
-        //: 학생의 성적을 저장할 메모리를 준비한다.
+        // 학생의 성적을 저장할 메모리를 준비한다.
         /*
         Score[] scores = new Score[3];
         scores[0] = new Score();
@@ -54,7 +54,7 @@ public class App {
         }
         scores[2].aver = scores[2].sum / 3f;
         
-        //: 학생 성적을 출력한다.
+        // 학생 성적을 출력한다.
         for (Score s : scores) {
             System.out.printf("%-4s, %4d, %4d, %4d, %4d, %6.1f\n",  
                     s.name, s.subjects[0], s.subjects[1], s.subjects[2], s.sum, s.aver);
